@@ -38,7 +38,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install pyttsx3
+          pip install pyttsx3 numpy pyaudio rlvoice-1
           
       - name: Execute Python script # Run the app.py
         run: python main.py
