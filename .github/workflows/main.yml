@@ -34,7 +34,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install numpy torchaudio omegaconf
+          pip install numpy torchaudio omegaconf ipython
           
       - name: Execute Python script # Run the app.py
         run: python main.py
