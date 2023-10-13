@@ -18,10 +18,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Install ffmpeg
-        run: | 
-          sudo apt-get install -y ffmpeg espeak libespeak1 libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
-        
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # Use hashes for extra security - https://stackoverflow.com/a/70196496/3016570
       - name: Checkout Repository
@@ -38,7 +34,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install pyttsx3 numpy pyaudio rlvoice-1 tts
+          pip install numpy torchaudio omegaconf
           
       - name: Execute Python script # Run the app.py
         run: python main.py
