@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Install ffmpeg
         run: | 
-          sudo apt-get install -y ffmpeg espeak libespeak1
+          sudo apt-get install -y ffmpeg espeak libespeak1 libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
         
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # Use hashes for extra security - https://stackoverflow.com/a/70196496/3016570
